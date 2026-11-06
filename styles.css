@@ -1,0 +1,70 @@
+:root{font-family:Inter,"Segoe UI",Arial,sans-serif;color:#173449;background:#f3f6f7;line-height:1.6}*{box-sizing:border-box}body{margin:0}a{color:#11669b;text-underline-offset:3px}button{font:inherit;cursor:pointer}.skip{position:absolute;top:-80px;left:8px;background:#fff;padding:10px}.skip:focus{top:8px;z-index:100}header{background:#12344e;color:#f6fcff}.head,main,footer{max-width:1140px;margin:auto;padding:26px 20px}.head{padding:46px 20px}.eyebrow{text-transform:uppercase;font-size:.73rem;letter-spacing:.12em;font-weight:800;opacity:.81}.head h1{font-size:clamp(1.85rem,4vw,3.1rem);line-height:1.15;max-width:790px;margin:13px 0}.lede{max-width:750px;font-size:1.07rem}.note{font-size:.86rem;opacity:.85}main{display:grid;grid-template-columns:235px minmax(0,1fr);gap:19px}.steps{align-self:start;display:grid;gap:8px;position:sticky;top:18px}.steps button{background:#fff;border:1px solid #c5d5df;text-align:left;border-radius:10px;padding:14px 12px;color:#18364e;line-height:1.35}.steps button[aria-current=true]{background:#214f72;color:#fff;border-color:#214f72}.steps small{display:block;opacity:.8;font-size:.75rem;margin-top:3px}.publication,.connections{background:#fff;border:1px solid #d9e4eb;border-radius:13px;min-width:0}.publication{padding:22px}.heading h2{font-size:clamp(1.35rem,2.2vw,1.85rem);line-height:1.3;margin:6px 0}.muted{color:#547083;margin:.25rem 0;font-size:.87rem}.source-note{background:#f1f5f8;border-left:3px solid #89aec4;padding:10px 12px;font-size:.84rem;margin:18px 0}.tabs{display:flex;flex-wrap:wrap;gap:7px;border-bottom:1px solid #d1dce5;padding-bottom:10px;margin-top:15px}.tabs button{background:#f1f6f9;color:#1c4c6b;border:1px solid #c8dce8;border-radius:8px;padding:8px 12px}.tabs button[aria-selected=true]{background:#1c4c6b;color:#fff}.sections{padding-top:8px}.section-card{padding:16px 0;border-bottom:1px solid #e5edf2}.section-card h3{margin:3px 0 8px;font-size:1.08rem}.section-card p{margin:6px 0}.section-card .locator,.section-card .label{font-size:.79rem;color:#58748a;font-weight:600}.footnav{display:flex;justify-content:space-between;gap:8px;margin-top:18px}.footnav button{border:1px solid #adc8d8;background:white;border-radius:8px;padding:8px 12px;color:#285678}.footnav button:disabled{opacity:.35;cursor:default}.connections{grid-column:2;padding:20px}.connections h2{font-size:1.15rem;margin:0}.connections>p{font-size:.85rem;color:#546b7c}.edge{padding:14px 0;border-top:1px solid #e3ebf0}.edge strong{display:block}.edge p{font-size:.85rem;margin:6px 0}.edge .caution{color:#7a4a18}footer{color:#50697d;font-size:.87rem}footer h2{font-size:1rem}button:focus-visible,a:focus-visible{outline:3px solid #da8b24;outline-offset:2px}#reader,#sections,.section-card,.edge{overflow-wrap:anywhere}@media(max-width:760px){main{display:flex;flex-direction:column}.steps{position:static;grid-template-columns:repeat(2,minmax(0,1fr))}.connections{width:100%}}@media(max-width:420px){.steps{grid-template-columns:1fr}.publication{padding:15px}.head{padding:30px 18px}}
+
+
+/* Isolated, additive styling for the public-staging Element trail preview. */
+.demo-trails{grid-column:2;min-width:0;background:#fff;border:1px solid #d9e4eb;
+ border-radius:13px;padding:20px}
+.demo-trails h2{font-size:1.18rem;margin:0 0 8px}
+.demo-trails .demo-intro,.demo-trails .demo-caution{color:#526b7d;font-size:.87rem}
+.demo-trails .demo-lane{border-top:1px solid #dbe5ed;padding-top:13px;margin-top:14px}
+.demo-trails .demo-lane h3{font-size:1rem;margin:0 0 5px}
+.demo-trails .demo-lane p{font-size:.85rem;margin:5px 0 10px}
+.demo-trails .demo-nodes{display:flex;gap:8px;flex-wrap:wrap}
+.demo-trails button{color:#204d69;background:#f2f7fa;border:1px solid #acc6d5;
+ border-radius:8px;padding:8px 10px;text-align:left}
+.demo-trails button[aria-pressed=true]{color:#fff;background:#205b7e;border-color:#205b7e}
+.demo-trails .demo-links{display:flex;flex-wrap:wrap;gap:6px;margin-top:9px}
+.demo-trails .demo-inspector{margin-top:14px;padding:13px;border-radius:9px;
+ border:1px solid #b9cdd9;background:#f4f8fb}
+.demo-trails .demo-inspector p{font-size:.86rem;margin:6px 0}
+.demo-trails button:focus-visible{outline:3px solid #da8b24;outline-offset:2px}
+@media(max-width:760px){.demo-trails{width:100%}}
+
+
+/* Real SVG graphs for the private D2 preview; original D2 remains unchanged. */
+.demo-graph-section{grid-column:1 / -1;background:white;border:1px solid #d9e4eb;border-radius:13px;padding:20px;min-width:0}
+.demo-graph-section + .publication{grid-column:2}
+.demo-graph-section h2{font-size:1.2rem;margin:0 0 5px;color:#173449}
+.demo-graph-section p{font-size:.89rem;line-height:1.5}
+.demo-graph-section .graph-disclosure{color:#526b7d;font-size:.83rem}
+.graph-controls{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap;margin:14px 0}
+.graph-tabs{display:flex;gap:7px;flex-wrap:wrap}
+.graph-tabs button{background:#f3f7fa;color:#174d6a;border:1px solid #b9cfdb;padding:9px 12px;border-radius:8px}
+.graph-tabs button[aria-selected=true]{background:#1c4c6b;color:white}
+.graph-picker-label{display:flex;gap:8px;align-items:center;font-size:.87rem;color:#294f66}
+.graph-picker-label select{max-width:260px;border:1px solid #abc4d2;border-radius:6px;padding:8px;background:white;color:#173449;font:inherit}
+.graph-viewport{max-width:100%;overflow-x:auto;overflow-y:hidden;background:#f8fafc;border:1px solid #d4e2ea;border-radius:10px;overscroll-behavior-x:contain}
+#research-graph{display:block;max-width:none;min-width:900px}
+.graph-node{cursor:pointer}
+.graph-edge{cursor:pointer}
+.graph-small{font-size:10px;fill:#4a6c83;font-weight:700}
+.graph-node-title{font-size:11px;fill:#173449;font-weight:600}
+.graph-edge path:first-child{transition:stroke .15s}
+.graph-edge:hover path:first-child,.graph-edge.selected path:first-child{stroke:#b15d25;stroke-width:4}
+.graph-node:hover rect,.graph-node.selected rect{stroke:#b15d25;stroke-width:3;fill:#fff2e9}
+.graph-node:focus,.graph-edge:focus{outline:none}
+.graph-node:focus-visible rect{stroke:#b15d25;stroke-width:4}
+.graph-edge:focus-visible path:first-child{stroke:#b15d25;stroke-width:4}
+.graph-details{border:1px solid #bfced9;padding:14px;border-radius:9px;background:#f4f8fb;margin-top:15px}
+.graph-details h3{font-size:1rem;margin:0 0 7px}
+.graph-details p{font-size:.86rem;margin:7px 0;overflow-wrap:anywhere}
+.graph-details button{border:1px solid #abc4d2;background:white;padding:8px 10px;border-radius:8px;color:#174d6a;margin:6px 0}
+.graph-details button:focus-visible,.graph-tabs button:focus-visible,.graph-picker-label select:focus-visible{outline:3px solid #da8b24;outline-offset:2px}
+@media(max-width:760px){.demo-graph-section{width:100%;padding:13px}.graph-tabs button{padding:7px 9px}.graph-picker-label select{max-width:195px}}
+
+/* Keep reading in the existing two-column grid; reserve whole width for graph. */
+.graph-column-title{font-size:14px;font-weight:700;fill:#47627a}
+.graph-node[data-role=QUESTION] rect,.graph-node[data-role=CONCEPT] rect,.graph-node[data-role=THEORY] rect{filter:drop-shadow(0 1px 0 #d5c5e4)}
+.graph-node[data-endpoint=start] rect{stroke:#2262a3;stroke-width:4}
+.graph-node[data-endpoint=end] rect{stroke:#168c78;stroke-width:4}
+.graph-edge.selected path:first-child{stroke:#b15d25;stroke-width:4.6}
+.graph-edge[aria-pressed=true] path:first-child{stroke:#b15d25;stroke-width:4.6}
+
+/* Reinstated source-connected focus: hide all unrelated arrow hit targets too. */
+#research-graph .graph-edge.filtered-out{display:none;pointer-events:none}
+#research-graph .graph-node.node-muted{opacity:.35}
+#research-graph .graph-node.node-related rect{stroke:#568da8;stroke-width:2.8}
+#research-graph .graph-node.selected rect{stroke:#b15d25;stroke-width:3.5}
+#graph-show-all{background:#fff;color:#174d6a;border:1px solid #a7c2d2;border-radius:8px;padding:9px 12px}
+#graph-show-all:disabled{opacity:.45;cursor:default}
+#graph-show-all:focus-visible{outline:3px solid #da8b24;outline-offset:2px}
