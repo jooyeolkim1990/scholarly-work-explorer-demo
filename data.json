@@ -1445,7 +1445,17 @@
             "description": "A five-session educational package combines appraisal instruction and gratitude exercises. This Element is provisionally derived and does not imply that each ingredient was independently isolated."
           }
         ],
-        "arguments": []
+        "arguments": [
+          {
+            "id": "DERIVED-M01-LIMIT",
+            "label": "EDITORIAL LIMIT",
+            "heading": "Intervention components cannot be isolated from this representation",
+            "title": "Intervention components cannot be isolated from this representation",
+            "summary": "This exploratory map contains one provisional method Element for the combined educational intervention. It does not represent separate identification of each lesson or exercise, nor has its exact source-page mapping been newly certified for this public demonstration.",
+            "description": "This exploratory map contains one provisional method Element for the combined educational intervention. It does not represent separate identification of each lesson or exercise, nor has its exact source-page mapping been newly certified for this public demonstration.",
+            "locator": "2014 article's intervention design; exact passage check pending"
+          }
+        ]
       },
       "elements": [
         {
