@@ -56,7 +56,7 @@ with sync_playwright() as p:
   assert page.locator("#research-graph .graph-node").count()==12;count+=1
   assert page.locator("#research-graph .graph-edge").count()==13;count+=1
   page.locator('[data-graph-node="GR-2003-COUNTING:M01"]').click()
-  assert page.locator("#research-graph .graph-edge:not(.filtered-out)").count()==5;count+=1
+  assert page.locator("#research-graph .graph-edge:not(.filtered-out)").count()==6;count+=1
   page.locator("#graph-show-all").click()
   assert page.locator("#research-graph .graph-edge:not(.filtered-out)").count()==13;count+=1
   page.locator('[data-graph-mode="trails"]').click()
